@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padaria Doce Sonho</title>
+  <link rel="stylesheet" href="./css/menu.css">
+  <script type="module" src="script/menu-refatorado.js" defer></script>
+  <script type="module" src="script/order-refatorado.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="navigation-container">
+      <div class="navigation">
+        <img src="assets/images/menu.png">
+      </div>
+    </header>
+
+    <main class="menu">
+      <div class="menu-container">
+        <div class="menu-header">
+          <h1 class="menu-header-title"><span class="font-ligth">Cardápio</span></h1>
+          <ul class="menu-itens">
+
+            <li>
+              <a class="item-menu active" data-category="all" href="#">
+                <div class="item-img">
+                  <img src="assets/icons/pao.svg" alt="">
+                </div>
+                <span class="item-title">Todos</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="item-menu" data-category="salgado" href="#">
+                <div class="item-img">
+                  <img src="assets/icons/pretzel.svg" alt="">
+                </div>
+                <span class="item-title">Salgado</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="item-menu" data-category="doce" href="#">
+                <div class="item-img">
+                  <img src="assets/icons/cupcake.svg" alt="">
+                </div>
+                <span class="item-title">Doce</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <section class="menu-content">
+          <h2 class="content-title"> <span class="font-ligth">Pedido</span></h2>
+
+          <ul class="menu-list">
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <section class="order">
+      <img class="shopcar-icon" src="assets/images/shopcar.png">
+      <ul class="order-list"></ul>
+        <div class="order-charge">
+          <spam class="order-price" id="total"></spam>
+          <spam class="order-delivery"></spam>
+          <button id="order-finish" class="order-finish">Finalizar Pedido</button>
+        </div>
+    </section>
+  </div>
+ 
+  
+</body>
+</html>
